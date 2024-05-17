@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'login_screen.dart';
+import 'signup_screen.dart';
 
 class WelcomeScreen extends StatelessWidget {
   @override
@@ -89,9 +90,12 @@ class WelcomeScreen extends StatelessWidget {
                   borderRadius: BorderRadius.circular(10),
                   child: InkWell(
                     onTap: () {
-                      // Navigator.push(context, MaterialPageRoute(
-                      // builder:(context)=>
-                      // ),);
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => SignUpScreen(),
+                        ),
+                      );
                     },
                     child: Padding(
                       padding:
